@@ -1,4 +1,6 @@
-const Module = require('./lib/userModule');
-const AbstractUserApiModule = require('./lib/abstractUserApiModule');
-
-module.exports = { Module, AbstractUserApiModule };
+const userModule = require('./lib/userModule');
+const abstractUserApiModule = require('./lib/abstractUserApiModule');
+module.exports = {
+    Module: userModule,
+    AbstractContentApiModule: abstractUserApiModule
+};
