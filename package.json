@@ -1,8 +1,7 @@
 {
   "name": "adapt-authoring-users",
   "version": "0.0.1",
-  "description": "Module for managing users",
-  "homepage": "https://github.com/taylortom/adapt-authoring-users",
+  "description": "User management module for the Adapt authoring tool",
   "main": "index.js",
   "adapt_authoring": {
     "module": true,
@@ -10,15 +9,11 @@
       "adapt-authoring-mongodb"
     ],
     "documentation": {
-      "enable": true,
-      "includes": {
-        "source": "lib/*",
-        "docs": "docs/*"
-      }
+      "enable": true
     }
   },
-  "dependencies": {
-    "adapt-authoring-api": "git+https://github.com/taylortom/adapt-authoring-api.git",
-    "adapt-authoring-core": "git+https://github.com/taylortom/adapt-authoring-core.git"
+  "peerDependencies": {
+    "adapt-authoring-api": "git+ssh://git@github.com/adapt-security/adapt-authoring-api.git",
+    "adapt-authoring-core": "git+ssh://git@github.com/adapt-security/adapt-authoring-core.git"
   }
 }
